@@ -12,7 +12,9 @@ body {
   h2  {
     font-size: 40px;
   }
-  
+  .bear {
+    margin-bottom: 40px;
+  }
   .container {
     text-align: center;
     width: 300px;
