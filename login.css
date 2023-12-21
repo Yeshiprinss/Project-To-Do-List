@@ -9,6 +9,9 @@ body {
     background-color: #f4f4f4;
     font-family: Inika;
   }
+  h2  {
+    font-size: 40px;
+  }
   
   .container {
     text-align: center;
@@ -19,7 +22,7 @@ body {
   
   form {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -46,10 +49,4 @@ body {
   
   button:hover {
     background-color: rgba(40, 39, 39, 0.61);
-  }
-  
-  #toggleForms {
-    margin-top: 10px;
-    color:  rgba(127, 127, 127, 0.61);
-    cursor: pointer;
   }
