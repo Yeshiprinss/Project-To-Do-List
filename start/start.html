@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="start.css">
-</head>
-<body>
-  <div class="container">
-    <h1>To-Do List</h1>
-    <div class="task-input">
-      <input type="text" id="newTaskInput" placeholder="Enter a new task...">
-      <button onclick="addTask()">Add</button>
-    </div>
-    <ul id="taskList"></ul>
-  </div>
+<html>
 
-  <script src="start.js"></script>
+<head>
+    <title>Project//Bear-Tasks</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="imgs/Bear.png">
+</head>
+
+<body>
+    <nav>
+        <img class="bear" src="imgs/Bear.png" alt="Imagen" width="110">
+        <h2>Bear-Task</h2>
+    </nav>
+    <div class="container-start">
+        <h2>Category</h2>
+        <button class="btn1" type="submit" onclick="redirectToPage()">Work</button>
+        <button class="btn2" type="submit" onclick="redirectToPage()">Personal</button>
+        <button class="btn3" type="submit" onclick="redirectToPage()">Birthdays</button>
+        <button class="btn4" type="submit" onclick="redirectToPage()">Medical</button>
+    </div>
+    <script src="start.js">
+    </script>
 </body>
+
 </html>
