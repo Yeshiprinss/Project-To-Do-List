@@ -1,0 +1,18 @@
+.categorias button {
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contenedor-tareas {
+    margin-top: 20px;
+  }
+  
+  .pagina-tarea {
+    display: none;
+  }
+  
+  .oculto {
+    display: none;
+  }
