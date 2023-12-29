@@ -19,7 +19,7 @@ h2 {
     margin: 20px;
 }
 
-.container-start button {
+.Category button {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
