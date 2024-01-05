@@ -9,3 +9,8 @@ function mostrarPagina(category) {
     const paginaSeleccionada = document.getElementById(categoria);
     paginaSeleccionada.classList.remove('oculto');
   }
+  function redirectToPage() {
+    setTimeout(()=> {
+      window.location.href = 'add-task.html';
+    }, 1000)
+    }
