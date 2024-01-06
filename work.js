@@ -5,6 +5,9 @@ function redirectToPage() {
 var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
 var listaTareas = document.getElementById('tareasList');
 
+
+
+
 tareas.forEach(function (tarea) {
   var li = document.createElement('li');
   li.textContent = `${tarea.tarea} [${tarea.fecha}]`;
@@ -28,7 +31,7 @@ function marcarComoCompletada(index) {
 }
 
 function actualizarListaTareas() {
-  listaTareas.innerHTML = ''; // Borra la lista antes de volver a renderizar
+  listaTareas.innerHTML = '';
 
   tareas.forEach(function (tarea, index) {
     var li = document.createElement('li');
@@ -65,4 +68,4 @@ function actualizarListaTareas() {
   });
 }
 
-actualizarListaTareas(); // Renderiza las tareas al cargar la página
+actualizarListaTareas();
