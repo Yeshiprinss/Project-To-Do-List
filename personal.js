@@ -2,24 +2,6 @@ function redirectToPage() {
     window.location.href = 'task-personal.html';
 }
 
-// Define la estructura de almacenamiento para las tareas de trabajo
-var tareasPersonal = {
-    // ... definición de tareas para la categoría de trabajo
-  };
-  
-  function agregarTareaPersonal(nuevaTarea) {
-    // Lógica para agregar una tarea a la categoría de trabajo
-  }
-  
-  function mostrarTareasPersonal() {
-    // Lógica para mostrar las tareas de trabajo en la interfaz
-  }
-  
-  // Otras funciones específicas para la categoría de trabajo
-  
-
-
-
 var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
 var listaTareas = document.getElementById('tareasList');
 
@@ -46,7 +28,7 @@ function marcarComoCompletada(index) {
 }
 
 function actualizarListaTareas() {
-    listaTareas.innerHTML = ''; // Borra la lista antes de volver a renderizar
+    listaTareas.innerHTML = '';
 
     tareas.forEach(function (tarea, index) {
         var li = document.createElement('li');

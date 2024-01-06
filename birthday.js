@@ -11,7 +11,6 @@ var li = document.createElement('li');
 li.textContent =  `${tarea.tarea} [${tarea.fecha}]`;
 listaTareas.appendChild(li);
 });
-// ... (tu código existente)
 
 function actualizarTareas() {
 localStorage.setItem('tareas', JSON.stringify(tareas));
@@ -30,7 +29,7 @@ actualizarListaTareas();
 }
 
 function actualizarListaTareas() {
-listaTareas.innerHTML = ''; // Borra la lista antes de volver a renderizar
+listaTareas.innerHTML = '';
 
 tareas.forEach(function(tarea, index) {
     var li = document.createElement('li');
@@ -67,4 +66,4 @@ tareas.forEach(function(tarea, index) {
 });
 }
 
-actualizarListaTareas(); // Renderiza las tareas al cargar la página
+actualizarListaTareas();

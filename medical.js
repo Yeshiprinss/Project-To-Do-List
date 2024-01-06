@@ -29,7 +29,7 @@ actualizarListaTareas();
 }
 
 function actualizarListaTareas() {
-listaTareas.innerHTML = ''; // Borra la lista antes de volver a renderizar
+listaTareas.innerHTML = '';
 
 tareas.forEach(function(tarea, index) {
     var li = document.createElement('li');
@@ -66,4 +66,4 @@ tareas.forEach(function(tarea, index) {
 });
 }
 
-actualizarListaTareas(); // Renderiza las tareas al cargar la página
+actualizarListaTareas();

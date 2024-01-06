@@ -1,0 +1,20 @@
+body        {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-task-btn  {
+    border-radius: 50%;
+    background-color: green;
+    width: 40px;
+    height: 40px;
+}
+.add-task-btn button  {
+    transition: background-color 0.3s ease;
+}
+
+.add-task-btn button:hover {
+    background-color: rgba(225, 213, 213, 0.8);   
+ } 
