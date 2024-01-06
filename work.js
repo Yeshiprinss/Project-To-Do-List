@@ -1,6 +1,5 @@
-function redirectToTaskPage() {
-  // Redirige a task.html
-  window.location.href = 'task.html';
+function redirectToPage() {
+  window.location.href = 'task-work.html';
 }
 
 var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
@@ -11,7 +10,6 @@ tareas.forEach(function (tarea) {
   li.textContent = `${tarea.tarea} [${tarea.fecha}]`;
   listaTareas.appendChild(li);
 });
-// ... (tu código existente)
 
 function actualizarTareas() {
   localStorage.setItem('tareas', JSON.stringify(tareas));

@@ -8,10 +8,8 @@ function agregarDatos(event) {
     tarea: tarea,
     fecha: fecha,
   };
-
   var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
   tareas.push(nuevaTarea);
   localStorage.setItem('tareas', JSON.stringify(tareas));
-
   window.location.href = 'work.html';
 }

@@ -1,7 +1,6 @@
 
-function redirectToTaskPage() {
-  // Redirige a task.html
-  window.location.href = 'task.html';
+function redirectToPage() {
+  window.location.href = 'task-birthday.html';
 }
 
 var tareas = JSON.parse(localStorage.getItem('tareas')) || [];

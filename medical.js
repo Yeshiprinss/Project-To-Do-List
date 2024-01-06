@@ -1,7 +1,6 @@
 
-function redirectToTaskPage() {
-  // Redirige a task.html
-  window.location.href = 'task.html';
+function redirectToPage() {
+  window.location.href = 'task-medical.html';
 }
 
 var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
@@ -12,7 +11,6 @@ var li = document.createElement('li');
 li.textContent =  `${tarea.tarea} [${tarea.fecha}]`;
 listaTareas.appendChild(li);
 });
-// ... (tu código existente)
 
 function actualizarTareas() {
 localStorage.setItem('tareas', JSON.stringify(tareas));
