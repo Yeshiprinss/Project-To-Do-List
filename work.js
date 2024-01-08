@@ -40,7 +40,7 @@ function actualizarListaTareas() {
 
     completarCheckbox.type = 'checkbox';
     completarCheckbox.checked = tarea.completada;
-    borrarBtn.textContent = 'Borrar';
+    borrarBtn.textContent = 'Eliminar';
 
     li.textContent = `${tarea.tarea} [${tarea.fecha}]`;
 

@@ -7,6 +7,12 @@ var categoriasTareas = {
   // Puedes agregar más categorías aquí si es necesario
 };
 
+
+function guardarTareasEnLocalStorage() {
+  localStorage.setItem('categoriasTareas', JSON.stringify(categoriasTareas));
+}
+
+
 function mostrarTareasEnPagina(categoria) {
   var listaTareas = document.getElementById('tareasList');
   listaTareas.innerHTML = '';

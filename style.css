@@ -11,10 +11,35 @@ body        {
     width: 40px;
     height: 40px;
 }
-.add-task-btn button  {
-    transition: background-color 0.3s ease;
-}
-
-.add-task-btn button:hover {
-    background-color: rgba(225, 213, 213, 0.8);   
- } 
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Inika';
+    font-size: 20PX;
+  }
+  
+  .add-task-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #205134;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos específicos para pantallas pequeñas (móviles) */
+  @media only screen and (max-width: 768px) {
+    .pagina-tarea {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    #lista-tareas {
+      max-width: 90%;
+    }
+  }
+  
