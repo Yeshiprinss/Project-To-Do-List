@@ -2,11 +2,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 0% auto;
     padding: 0% auto;
     font-family: 'inika';
-    border: 1px solid;
-    height: 100%;
 }
 
 nav {
@@ -43,7 +43,7 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 700px;
 }
 
 .Category button {
