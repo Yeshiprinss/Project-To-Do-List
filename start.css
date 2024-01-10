@@ -1,78 +1,91 @@
+/* Estilos generales para el cuerpo de la página */
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    margin: 0% auto;
-    padding: 0% auto;
+    margin: 0;
+    padding: 0;
     font-family: 'inika';
-}
-
-nav {
+    height: 100vh;
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
     display: flex;
     padding: 20px;
     margin: 20px;
-    display: flex;
     border-bottom: 1px solid black;
-}
-
- nav h2 {
-    display: flex;
+    max-width: 700px; /* Establece un máximo para el ancho de la barra de navegación */
+  }
+  
+  nav h2 {
     margin: 20px;
     text-align: center;
     font-size: 40px;
-}
-.Category h2  {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
+  }
+  
+  /* Estilos para los elementos de la categoría */
+  .Category {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/backgrount-bear.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    max-width: 700px; /* Establece un máximo para el ancho de la categoría */
+    padding: 50px;
+  }
+  
+  .Category h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     background-color: rgba(127, 127, 127, 0.61);
     border: 1px solid;
     border-radius: 20px;
-}
-
-.Category {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 40px;
-    background-image: url(img/backgrount-bear.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 10px;
-    width: 700px;
-}
-
-.Category button {
-    background-color: rgba(127, 127, 127, 0.61);
-    font-size: 20px;
-    margin: 40px;
-    padding: 30px;
-    width: 130px;
+    width: 300px;
     height: 60px;
-}
-
-.Category button {
+    margin: 30px auto; /* Ajuste el margen para centrar horizontalmente */
+    text-align: center; /* Centra el texto dentro del h2 */
+  }
+  
+  .Category button {
     background-color: rgba(127, 127, 127, 0.61);
     font-size: 20px;
     margin: 10px;
     padding: 10px;
-    width: 130px;
+    width: 120px;
     height: 60px;
     transition: background-color 0.3s ease;
-}
-
-.Category button:hover {
+  }
+  
+  .Category button:hover {
     background-color: rgba(63, 60, 60, 0.8);
-}
-
-.Category .btn2 {
+  }
+  
+  .Category .btn2,
+  .Category .btn4 {
     margin-left: auto;
-}
-
-.Category .btn4 {
-    margin-left: auto;
-}
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    nav {
+      max-width: 90%; /* Ajusta el ancho de la barra de navegación para pantallas pequeñas */
+    }
+    
+    .Category,
+    .Category h2,
+    .Category button {
+      width: 60%; /* Ajusta el ancho para pantallas más pequeñas */
+    }
+  
+    .Category h2 {
+      font-size: 20px; /* Reduce el tamaño del texto para dispositivos móviles */
+      margin: 10px auto; /* Ajusta el margen para centrar en pantallas más pequeñas */
+    }
+  }
+  

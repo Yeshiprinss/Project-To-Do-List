@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'inika';
+}
+
+h1 {
+    background-color: rgba(127, 127, 127, 0.61);
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+form {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    background-image: url(img/backgrount-bear.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input {
+    text-align: center;
+    margin: 10px;
+    /* Ajuste del margen entre elementos */
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgba(127, 127, 127, 0.61);
+}
+
+button {
+    width: 40%;
+    /* Ajuste del ancho para dispositivos móviles */
+    padding: 8px;
+    /* Reducción del padding */
+    margin: 10px;
+    /* Ajuste del margen entre elementos */
+    border: solid 1px black;
+    border-radius: 50px;
+    background-color: rgba(127, 127, 127, 0.61);
+    color: black;
+    cursor: pointer;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+}
+
+button:hover {
+    background-color: rgba(40, 39, 39, 0.61);
+}
