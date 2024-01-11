@@ -1,12 +1,9 @@
-// Define la estructura de almacenamiento para las categorías y sus tareas
 var categoriasTareas = {
   Work: [],
   Personal: [],
   Birthday: [],
   Medical: []
-  // Puedes agregar más categorías aquí si es necesario
 };
-
 
 function guardarTareasEnLocalStorage() {
   localStorage.setItem('categoriasTareas', JSON.stringify(categoriasTareas));
@@ -44,12 +41,9 @@ function mostrarTareas(categoria) {
 }
 
 function actualizarTareas() {
-  // Lógica para actualizar las tareas en el almacenamiento (LocalStorage)
-  // Puedes implementar aquí la lógica para guardar las tareas actualizadas
-  // en el almacenamiento local.
 }
 
-// Obtener referencias a los botones en el HTML y agregar listeners
+
 var btnWork = document.getElementById('btnWork');
 var btnPersonal = document.getElementById('btnPersonal');
 var btnBirthday = document.getElementById('btnBirthday');

@@ -10,31 +10,37 @@ body {
 }
 
 h2 {
-  font-size: 28px; /* Reducción del tamaño de fuente para dispositivos móviles */
+  font-size: 28px;
+  /* Reducción del tamaño de fuente para dispositivos móviles */
 }
 
 .bear {
-  margin-bottom: 20px; /* Ajuste del espacio inferior para dispositivos móviles */
+  margin-bottom: 20px;
+  /* Ajuste del espacio inferior para dispositivos móviles */
 }
 
 .container {
   text-align: center;
-  width: 90%; /* Ajuste del ancho para dispositivos móviles */
-  max-width: 300px; /* Máximo ancho para mantener el diseño centrado */
+  width: 90%;
+  /* Ajuste del ancho para dispositivos móviles */
+  max-width: 300px;
+  /* Máximo ancho para mantener el diseño centrado */
   border: solid 1px black;
   border-radius: 10px;
 }
 
 form {
   background-color: #fff;
-  padding: 20px; /* Reducción del espaciado interior para dispositivos móviles */
+  padding: 20px;
+  /* Reducción del espaciado interior para dispositivos móviles */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 input {
   width: calc(100% - 20px);
-  margin-bottom: 10px; /* Ajuste del espacio inferior para dispositivos móviles */
+  margin-bottom: 10px;
+  /* Ajuste del espacio inferior para dispositivos móviles */
   padding: 8px;
   border: 1px solid black;
   background-color: rgba(127, 127, 127, 0.61);
@@ -43,8 +49,8 @@ input {
 }
 
 button {
-  width: 40%; /* Ajuste del ancho para dispositivos móviles */
-  padding: 8px; /* Reducción del padding para dispositivos móviles */
+  width: 40%;
+  padding: 8px;
   border: solid 1px black;
   border-radius: 50px;
   background-color: rgba(127, 127, 127, 0.61);
@@ -56,23 +62,22 @@ button:hover {
   background-color: rgba(40, 39, 39, 0.61);
 }
 
-/* Media query para dispositivos móviles */
 @media only screen and (max-width: 600px) {
   h2 {
-    font-size: 24px; /* Reducción adicional del tamaño de fuente para pantallas más pequeñas */
+    font-size: 24px;
   }
 
   .bear {
-    margin-bottom: 10px; /* Ajuste adicional del espacio inferior para pantallas más pequeñas */
+    margin-bottom: 10px;
   }
 
   input {
-    width: calc(100% - 16px); /* Ajuste del ancho del input para pantallas más pequeñas */
-    margin-bottom: 8px; /* Ajuste adicional del espacio inferior para pantallas más pequeñas */
+    width: calc(100% - 16px);
+    margin-bottom: 8px;
   }
 
   button {
-    width: 60%; /* Ajuste adicional del ancho para pantallas más pequeñas */
-    padding: 6px; /* Reducción adicional del padding para pantallas más pequeñas */
+    width: 60%;
+    padding: 6px;
   }
-}
+ }

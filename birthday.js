@@ -3,6 +3,10 @@ function redirectToPage() {
   window.location.href = 'task-birthday.html';
 }
 
+function redirectToHome() {
+    window.location.href = 'start.html';
+  }
+
 var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
 var listaTareas = document.getElementById('tareasList');
 
