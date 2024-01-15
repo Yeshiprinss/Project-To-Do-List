@@ -1,14 +1,14 @@
 
 function redirectToPage() {
-  window.location.href = 'task-birthday.html';
+  window.location.href = '../html/task-birthday.html';
 }
 
 function redirectToHome() {
-    window.location.href = 'start.html';
+    window.location.href = 'index.html';
   }
 
-var tareas = JSON.parse(localStorage.getItem('tareas')) || [];
-var listaTareas = document.getElementById('tareasList');
+let tareas = JSON.parse(localStorage.getItem('tareas')) || [];
+let listaTareas = document.getElementById('tareasList');
 
 tareas.forEach(function(tarea) {
 var li = document.createElement('li');
@@ -36,9 +36,9 @@ function actualizarListaTareas() {
 listaTareas.innerHTML = '';
 
 tareas.forEach(function(tarea, index) {
-    var li = document.createElement('li');
-    var completarCheckbox = document.createElement('input');
-    var borrarBtn = document.createElement('button');
+    let li = document.createElement('li');
+    let completarCheckbox = document.createElement('input');
+    let borrarBtn = document.createElement('button');
 
     completarCheckbox.type = 'checkbox';
     completarCheckbox.checked = tarea.completada;

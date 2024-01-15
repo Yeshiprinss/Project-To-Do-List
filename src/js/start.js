@@ -1,24 +1,24 @@
-var categoriasTareas = {
+let categoriasTareas = {
   Work: [],
   Personal: [],
   Birthday: [],
   Medical: []
 };
 
-function guardarTareasEnLocalStorage() {
+ function guardarTareasEnLocalStorage() {
   localStorage.setItem('categoriasTareas', JSON.stringify(categoriasTareas));
-}
+} 
 
 
 function mostrarTareasEnPagina(categoria) {
-  var listaTareas = document.getElementById('tareasList');
+  let listaTareas = document.getElementById('tareasList');
   listaTareas.innerHTML = '';
 
   categoriasTareas[categoria].forEach(function (tarea) {
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     li.textContent = `${tarea.descripcion} [${tarea.fecha}]`;
 
-    var completarCheckbox = document.createElement('input');
+    let completarCheckbox = document.createElement('input');
     completarCheckbox.type = 'checkbox';
     completarCheckbox.checked = tarea.completada;
 
@@ -31,10 +31,10 @@ function mostrarTareasEnPagina(categoria) {
     listaTareas.appendChild(li);
   });
 }
-
 function mostrarPagina(categoria) {
-  window.location.href = categoria.toLowerCase() + '.html';
+  window.location.href = 'src/html/' + categoria.toLowerCase() + '.html';
 }
+
 
 function mostrarTareas(categoria) {
   mostrarTareasEnPagina(categoria);
@@ -43,11 +43,9 @@ function mostrarTareas(categoria) {
 function actualizarTareas() {
 }
 
-
-var btnWork = document.getElementById('btnWork');
-var btnPersonal = document.getElementById('btnPersonal');
-var btnBirthday = document.getElementById('btnBirthday');
-var btnMedical = document.getElementById('btnMedical');
+let btnPersonal = document.getElementById('btnPersonal');
+let btnBirthday = document.getElementById('btnBirthday');
+let btnMedical = document.getElementById('btnMedical');
 
 btnWork.addEventListener('click', function () {
   mostrarTareas('Work');
