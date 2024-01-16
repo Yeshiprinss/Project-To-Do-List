@@ -11,5 +11,5 @@ function agregarDatos(event) {
   let tareas = JSON.parse(localStorage.getItem('tareas')) || [];
   tareas.push(nuevaTarea);
   localStorage.setItem('tareas', JSON.stringify(tareas));
-  window.location.href = '/html/work.html';
+  window.location.href = '/src/html/work.html';
 }

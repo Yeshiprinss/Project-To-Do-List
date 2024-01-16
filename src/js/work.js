@@ -1,5 +1,5 @@
 function redirectToPage() {
-  window.location.href = '/task-work.html';
+  window.location.href = '../src/html/task-work.html';
 }
 
 function redirectToHome() {

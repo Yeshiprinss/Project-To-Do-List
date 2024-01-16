@@ -1,10 +1,10 @@
 
 function redirectToPage() {
-  window.location.href = '../html/task-birthday.html';
+  window.location.href =  '/src/html/task-birthday.html';
 }
 
 function redirectToHome() {
-    window.location.href = 'index.html';
+    window.location.href = '/index.html';
   }
 
 let tareas = JSON.parse(localStorage.getItem('tareas')) || [];

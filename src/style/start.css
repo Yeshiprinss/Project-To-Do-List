@@ -7,7 +7,6 @@ body {
     padding: 0;
     font-family: 'inika';
     height: 100vh;
-    background-image: url(/img/backgrount-bear.jpg);
   }
   
   nav {
@@ -26,7 +25,7 @@ body {
   .Category {
     display: flex;
     flex-direction: column;
-    
+    background-image: url(/img/backgrount-bear.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

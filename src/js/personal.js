@@ -1,9 +1,9 @@
 function redirectToPage() {
-    window.location.href = '../html/task-personal.html';
+    window.location.href = '/src/html/task-personal.html';
 }
 
 function redirectToHome() {
-    window.location.href = 'index.html';
+    window.location.href = '/index.html';
 }
 
 let tareas = JSON.parse(localStorage.getItem('tareas')) || [];
